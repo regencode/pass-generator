@@ -1,4 +1,4 @@
-# pass-generator by Code Society 
+# PassGet by Code Society 
 Members:
 
 Thomas Gozalie/regencode - 2602119096
@@ -14,7 +14,7 @@ TODO:
 
  Storyboards/mock ups - 
  
- Poster -
+ Poster - almost done, just need storyboard/design
  
  HTML Design -
  
