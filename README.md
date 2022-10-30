@@ -12,9 +12,9 @@ Nathan Darien Tanner - 2602225656
 
 TODO:
 
- Storyboards/mock ups - 
+ Storyboards/mock ups - DONE
  
- Poster - almost done, just need storyboard/design
+ Poster - DONE
  
  HTML Design -
  
