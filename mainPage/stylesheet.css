@@ -1,0 +1,108 @@
+
+
+body {
+    background-color: #0B0F2F;
+    margin: 0px;
+}
+
+.top {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.sidebarIcon {
+    padding: 10px;
+    height: 30px;
+    width:auto;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    width: 500px;
+    height: auto;
+  }
+
+
+.middleBox {
+    background-color: rgba(112, 136, 216, 0.137);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    border: 10px;
+}
+
+.passwordOutputBox {
+    background-color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    height: 50px;
+    border: 10px;
+    border-radius: 25px;
+}
+
+.buttonSpace { /*container for buttons */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 250px;
+    height: 100px;
+}
+
+.generateButton {
+    float: left;
+    background-color: rgb(68, 68, 112);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    border: 10px;
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+.buttonText {
+    margin-left: auto;
+    margin-right: auto;
+    color: white
+}
+
+.saveButton {
+    float: right;
+    background-color: rgb(209, 194, 58);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    border: 10px;
+    border-radius: 25px;
+    
+    text-align: center;
+}
+
+
+
+#rcorners1 { /* rounded corners */
+    border-radius: 25px;
+    background: rgba(112, 136, 216, 0.137);
+    padding: 20px; 
+    height :500px;
+    width:90%;
+    
+  }
+
+
