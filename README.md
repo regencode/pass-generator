@@ -16,8 +16,8 @@ TODO:
  
  Poster - DONE
  
- HTML Design -
+ HTML Design - 1/3
  
- CSS -
+ CSS - 1/3
  
  Javascript -
