@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="passLibrary.js"></script>
 
     <title>PassGet: Password Library</title>
 </head>
 <body>
     <div class = "top">
-        <img src ="../imgs/sidebarIcon.png" class="sidebarIcon">
+        <img src ="../imgs/sidebarIcon.png" class = "button" id="sidebarIcon">
     </div>
     <h1 class="title-text">
         Password Library
     </h1>
     <div class = "middleBox">
         <div class = "passwordNumCounter">
-            1/25
+            1/20
         </div>
         <div class = "passwordContainer">
-            <p class="passwordText" id="pass1">
-                password
-
-            </p>
+            <div class="containerColumn-1-2">
+                <div class="containerChild" id = "column1">
+                    <p class="passwordText" id="pass-1">
+                        password
+                    </p>
+                </div>
+                <div class="containerChild" id = "column2">
+                    <p class="passwordText" id="pass-1">
+                        password
+                    </p>
+                </div>
+            </div>
+            <div class="containerColumn-3-4">
+                <div class="containerChild" id = "column3">
+                    <p class="passwordText" id="pass-1">
+                    password
+                    </p>
+                </div>
+                <div class="containerChild" id = "column4">
+                    <p class="passwordText" id="pass-1">
+                    password
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
