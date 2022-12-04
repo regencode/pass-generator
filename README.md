@@ -5,7 +5,7 @@ Thomas Gozalie/regencode - 2602119096
 
 Felix Ferdinand - 2602108842
 
-Nathan Darien Tanner - 2602225656
+Nathan Darien Tanner - 2602225656 (haven't accepted collaborator invitation)
 
 -------------------------------------------------------------------------
 
