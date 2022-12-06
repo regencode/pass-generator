@@ -16,8 +16,8 @@ TODO:
  
  Poster - DONE
  
- HTML Design - 1/3
+ HTML Design - 3/3
  
- CSS - 1/3
+ CSS - 3/3
  
- Javascript -
+ Javascript - password generator functionality not yet added
