@@ -1,8 +1,14 @@
-
-
 body {
     background-color: #080c30;
     margin: 0px;
+}
+
+#parsettings {
+    text-align: center;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 /*Sidebar Settings */
@@ -91,33 +97,38 @@ body {
 }
 /* End of Sidebar Settings */
 
-.logo {
-    display: block;
+input {
+    font-size: 24px;
+}
+
+.title-text {
+    color: rgb(255, 230, 2);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 
-    width: 500px;
-    height: auto;
-    user-select: none;
-    
-  }
-
+    font-family: Trebuchet MS, Arial, sans-serif;  
+    text-align:center;
+    font-size: 55px;
+}
 
 .middleBox {
-    background-color: rgba(112, 136, 216, 0.137);
+
+    border-radius: 25px;
+    background: rgba(112, 136, 216, 0.137);
+    padding: 20px; 
+    height :800px;
+    min-width: 500px;
+    width:90%;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    border-radius: 25px;
-    padding: 20px; 
-    height :500px;
-    width:90%;
-    
+    margin-bottom: 50px;
     border: 10px;
 }
 
-.passwordOutputBox {
+.searchbar {
     background-color: white;
     display: flex;
     margin-left: auto;
@@ -130,62 +141,16 @@ body {
     border-radius: 25px;
 }
 
-.buttonSpace { /*container for buttons */
-    display: block;
+#inputSpace {
+    background-color: white;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    width: 300px;
-    height: 100px;
-}
-
-.buttonText {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    user-select: none;
-}
-
-#generateButton {
-    float: left;
-    background-color: rgb(68, 68, 112);
-    margin-left: auto;
-    margin-right: auto;
-    width: 125px;
-    height: 47px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    height: 50px;
     border: 10px;
     border-radius: 25px;
-
     text-align: center;
 }
-#generateButton:hover{
-    background: rgba(107, 131, 212, 0.397);
-    transition: 0.25s
-}
-
-#generateButton:not(:hover){
-    background: rgba(55, 91, 211, 0.404);
-    transition: 0.25s;
-}
-
-
-#saveButton {
-    float: right;
-    background-color: rgb(167, 154, 40);
-    margin-left: auto;
-    margin-right: auto;
-    width: 125px;
-    height: 47px;
-    border: 10px;
-    border-radius: 25px;
-
-    text-align: center;
-}
-#saveButton:hover{
-    background-color: rgba(255, 231, 11, 0.856);
-    transition: 0.25s;
-}
-#saveButton:not(:hover){
-    background-color: rgb(167, 154, 40);
-    transition: 0.25s;
-}
-

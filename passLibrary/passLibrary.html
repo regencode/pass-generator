@@ -10,9 +10,25 @@
     <title>PassGet: Password Library</title>
 </head>
 <body>
-    <div class = "top">
-        <img src ="../imgs/sidebarIcon.png" class = "button" id="sidebarIcon">
+
+    <div id = "top">
+        <img src ="../imgs/sidebarIcon.png" class ="button" id="sidebarIcon"
+        onclick="showSidebar()">
+        <div id="sidebar">
+            <img src="../imgs/backButton.png" class="button" id="backButton"
+        onclick="hideSidebar()">
+            <div class="sidebarTab" id="sidebarTab1" onclick="toPassGenerator()">
+                <p class= "sidebarText">Password Generator</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab2" onclick="toPassLibrary()">
+                <p class= "sidebarText">Password Library</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab3" onclick="toPassStrChecker()">
+                <p class= "sidebarText">Password Strength Checker</p>
+            </div>
+        </div>
     </div>
+
     <h1 class="title-text">
         Password Library
     </h1>
@@ -47,5 +63,32 @@
             </div>
         </div>
     </div>
+
+<script> <!---Sidebar Functions-->
+
+
+    function showSidebar(){
+        document.getElementById('sidebarIcon').style.display = 'none';
+        document.getElementById('sidebar').style.display = 'block';
+    }
+    
+    function hideSidebar(){
+        document.getElementById('sidebarIcon').style.display = 'block';
+        document.getElementById('sidebar').style.display = 'none';
+    }
+    
+    function toPassGenerator(){
+        window.location.href="../mainPage/mainPage.html";
+    }
+    
+    function toPassLibrary(){
+        window.location.href="../passLibrary/passLibrary.html";
+    }   
+    
+    function toPassStrChecker(){
+        window.location.href="../passStrengthChecker/passStrengthChecker.html";
+    }
+    
+    </script> 
 </body>
 </html>
