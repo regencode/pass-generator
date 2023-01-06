@@ -9,11 +9,8 @@
 </head>
 <body>
     <div id = "top">
-        <img src ="../imgs/sidebarIcon.png" class ="button" id="sidebarIcon"
-        onclick="showSidebar()">
-        <div id="sidebar">
-            <img src="../imgs/backButton.png" class="button" id="backButton"
-        onclick="hideSidebar()">
+        <img src="../imgs/passGetText.png" id="passGetText" onclick="toMainPage()">
+        <div id="navbarContainer">
             <div class="sidebarTab" id="sidebarTab1" onclick="toPassGenerator()">
                 <p class= "sidebarText">Password Generator</p>
             </div>
@@ -25,40 +22,24 @@
             </div>
         </div>
     </div>
+
     <h1 class="title-text">
         Password Strength Checker
     <h1>
     <div class="middleBox">
-        <p id="parsettings"> Enter your password here: </p>
-        <input type="text" maxlength="18" id="inputSpace">
-
-        </a>
-    
+        <p id="parSettings"> Enter your password here: </p>
+        <div class="wrapper">
+            <div class="container">
+                <input type="text" id="password" oninput="strengthChecker()" maxlength="18">
+                <div id="strength-bar"></div>
+            </div>
+            <div id="msgContainer">
+                <p id="msg"></p>    
+            </div>  
+        </div>
     </div>
 
-<script>
-    function showSidebar(){
-    document.getElementById('sidebarIcon').style.display = 'none';
-    document.getElementById('sidebar').style.display = 'block';
-}
-
-function hideSidebar(){
-    document.getElementById('sidebarIcon').style.display = 'block';
-    document.getElementById('sidebar').style.display = 'none';
-}
-
-function toPassGenerator(){
-    window.location.href="../mainPage/mainPage.html";
-}
-
-function toPassLibrary(){
-    window.location.href="../passLibrary/passLibrary.html";
-}   
-
-function toPassStrChecker(){
-    window.location.href="../passStrengthChecker/passStrengthChecker.html";
-}
-</script>
-    
+<script src="passStrengthChecker.js"></script> 
+<script src="../functions.js"></script>
 </body>
 </html>

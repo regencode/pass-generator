@@ -1,9 +1,79 @@
+.wrapper{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 50px 0;
+    margin-top: 75px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+.container{
+    width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+input,
+p{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+input{
+    width: 80%;
+    height: 50px;
+    padding: 0 40px 0 20px;
+    position: relative;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 0 0;
+}
+
+#msgContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 500px;
+    height: 50px;
+}
+
+
+#toggle{
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    color: #808080;
+    cursor: pointer;
+}
+.strength{
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    bottom: 5px;
+}
+#strength-bar{
+    background-color: #dcdcdc;
+    height: 10px;
+    position: relative;
+}
+p{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 body {
     background-color: #080c30;
     margin: 0px;
 }
 
-#parsettings {
+#parSettings {
     text-align: center;
     padding: 0px;
     color: #ffffff;
@@ -11,91 +81,64 @@ body {
 
 }
 
-/*Sidebar Settings */
+/*Navbar and Sidebar Settings 
+I am reusing the sidebar buttons as navbar buttons*/
+
 #top {
+    display: flex;
     position:fixed;
-    background-color:#ffffff;
+    background-color:#2c2b2e;
+    border-bottom:2px solid white;
     height: 50px;
     width: 100%;
     top: 0;
-}
-
-#sidebarIcon {
-    display: block;
-    padding: 10px;
-    position: absolute;
-    height: 30px;
-    width:auto;
-    user-select: none;
-}
-#sidebarIcon:hover{
-    background: rgba(158, 158, 158, 0.35);
-    transition: 0.25s
-}
-#sidebarIcon:not(:hover){
-    background-color:#ffffff;
-    transition: 0.25s;
-}
-
-#backButton {
-    padding: 10px;
-    height: 30px;
-    width:auto;
     opacity: 1;
     user-select: none;
-}
-#backButton:hover{
-    background: rgba(158, 158, 158, 0.35);
-    transition: 0.25s
-}
-#backButton:not(:hover){
-    background-color:#ffffff;
-    transition: 0.25s;
+    z-index: 10;
 }
 
-
-#sidebar {
-    display: none;
-    background-color: #ffffffaa;
-    top: 0;
-    position:fixed;
-    height: 100%;
-    width: 300px;
-    opacity: 1;
+#navbarContainer {
+    display: flex;
+    width: 40%;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: 0;
 }
-#sidebar:hover{
-    background-color: white;
-    transition: 0.3s;
+#passGetText {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: auto;
+    margin-left: 70px;
+    margin-right: auto;
+    user-select: none;
 }
-#sidebar:not(:hover){
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
 .sidebarTab {
-    width: 99%;
-    height: 75px;
+    width: 220px;
+    height: 50px;
     padding: 0px;
-    border-top: 1px solid #6c6c6c;
-    border-bottom: 1px solid #6c6c6c;
-
+    background-color:#2c2b2e;
     text-align: center;
 }
 
 .sidebarTab:hover{
-    background-color: rgba(196, 196, 196, 0.837);
+    background-color: rgba(63, 63, 63, 0.837);
     transition: 0.25s;
 }
 .sidebarTab:not(:hover){
-    background-color: white;
+    background-color:#2c2b2e;
     transition: 0.25s;
 }
 
 .sidebarText {
     font-family: Arial, sans-serif;
     user-select: none;
+    color: rgb(255, 255, 255);
 }
-/* End of Sidebar Settings */
+
+
+/* End of Navbar and Sidebar Settings */
+
 
 input {
     font-size: 24px;
@@ -154,3 +197,4 @@ input {
     border-radius: 25px;
     text-align: center;
 }
+

@@ -1,0 +1,89 @@
+<!--TODO: write the js for password generator-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">  
+    <title>PassGet: Password Generator</title>
+
+</head>
+<body>
+    <div id = "top">
+        <img src="../imgs/passGetText.png" id="passGetText" onclick="toMainPage()">
+        <div id="navbarContainer">
+            <div class="sidebarTab" id="sidebarTab1" onclick="toPassGenerator()">
+                <p class= "sidebarText">Password Generator</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab2" onclick="toPassLibrary()">
+                <p class= "sidebarText">Password Library</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab3" onclick="toPassStrChecker()">
+                <p class= "sidebarText">Password Strength Checker</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <img src="../imgs/passGetLogo" class="logo">
+    
+    <div class = "middleBox" id="midBox">
+        <div id="passwordOutputBox"> 
+            <p id="password"></p>
+        </div>
+     
+        <div class= "buttonSpace">
+
+            <div class = "button" id="generateButton" onclick="passwordGenerator()"
+            onmouseover="elementSelectable('password', 0)" 
+            onmouseleave="elementSelectable('password', 1)">
+
+                <p class="buttonText">
+                    Generate
+                </p>
+
+            </div> 
+
+            <div class = "button" id="saveButton" onmouseover="elementSelectable('password', 0)"
+            onclick="saveToLibrary()">
+                <p class="buttonText">
+                    Save
+                </p>
+            </div>
+
+        </div>
+
+        <div id="settingsBox">
+            <p id="settingsTitle">Settings:</p>
+            <div id="settingsContainer">
+
+                <div class="settings">
+                    <p id="lengthSliderTitle">Length: 8</p>
+                    <input type="range" min="8" max="18" value="8" id="lengthSlider" class="settingsSlider"> 
+
+                <div class="settings">
+                    <input type="checkbox" id="enableSymbolsInput" class="settingsCheckbox" checked="checked"> Enable Symbols
+                </div>
+
+                <div class="settings">
+                    <input type="checkbox" id="enableNumbersInput" class="settingsCheckbox" checked="checked"> Enable Numbers
+                </div>
+
+                <div class="settings">
+                    <input type="checkbox" id="enableCharInput" class="settingsCheckbox" checked="checked"> Enable Letters
+                </div>
+   
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<script src="../functions.js"></script>
+<script src="passGen.js"></script>
+</body>
+</html>
+
