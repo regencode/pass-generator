@@ -1,0 +1,382 @@
+
+
+body {
+    background-image: linear-gradient(#0B0F2F,rgb(12, 12, 68));
+    margin: 0px;
+}
+
+/* Navbar and Sidebar settings */
+#top {
+    display: flex;
+    position:fixed;
+    background-color:#2c2b2e;
+    border-bottom:2px solid white;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    user-select: none;
+    z-index: 10;
+}
+
+#passGetText {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: auto;
+    margin-left: 70px;
+    user-select: none;
+}
+
+@media only screen and (min-width: 900px){
+
+    #sidebarButton {
+        display: none;
+    }
+
+    #backButton {
+        display: none;
+    }
+
+    .sidebarTab {
+        display: none;
+    }
+
+    #navbarContainer {
+        display: flex;
+        width: 40%;
+        min-width: 700px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .navbarTab {
+        width: 220px;
+        height: 50px;
+        padding: 0px;
+        background-color:#2c2b2e;
+        text-align: center;
+    }
+
+    .navbarTab:hover{
+        background-color: rgba(63, 63, 63, 0.837);
+        transition: 0.25s;
+    }
+    .navbarTab:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+
+    .sidebarText {
+        font-family: Arial, sans-serif;
+        user-select: none;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .navbarTab {
+        display: none;
+    }
+
+    #sidebarButton {
+        display: block;
+        height: 100%;
+        aspect-ratio: 1;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        border: 1px solid rgba(158, 158, 158, 0.35);
+
+        background-color:#2c2b2e;
+        font-size: 30px;
+        color:white;
+
+    }
+
+    #sidebarButton:hover{
+        background: rgba(158, 158, 158, 0.35);
+        transition: 0.25s
+    }
+    #sidebarButton:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+    #backButton {
+        display: block;
+        padding:7px;
+        height: 50px;
+        width: 50px;
+        user-select: none;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        border: 1px solid rgba(158, 158, 158, 0.35);
+    }
+    #backButton:hover{
+        background: rgba(158, 158, 158, 0.35);
+        transition: 0.25s
+    }
+    #backButton:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+    #backIcon {
+        width: 30px;
+    }
+
+
+    #sidebar {
+        display: none;
+        background-color: #2c2b2e;
+        right: 0;
+        top: 0;
+        position:fixed;
+        height: 100%;
+        width: 300px;
+        opacity: 1;
+    }
+    #sidebar:hover{
+        background-color: #2c2b2e;
+        transition: 0.3s;
+    }
+    #sidebar:not(:hover){
+        background-color: #2c2b2e;
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+    .sidebarTab {
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        background-color:#2c2b2e;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    .sidebarTab:hover{
+        background-color: rgba(63, 63, 63, 0.837);
+        transition: 0.25s;
+    }
+    .sidebarTab:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+    
+    .sidebarText {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        color: white;
+        margin-top: 40px;
+    }
+
+}
+
+/* End of Navbar and Sidebar Settings */
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    width: 500px;
+    height: auto;
+    user-select: none;
+
+}
+
+
+.middleBox {
+    background-color: rgba(112, 136, 216, 0.137);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    padding: 20px; 
+    height :500px;
+    width:90%;
+    
+    border: 10px;
+}
+
+#passwordOutputBox {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    height: 50px;
+    border: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgb(27, 26, 26);
+}
+
+#password {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 80%;
+    max-width: 500px;
+    height: 50px;
+    border: 10px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top:7px;
+
+    font-size: 30px;
+    font-family: Trebuchet MS, Arial, sans-serif;
+}
+#password:hover {
+    user-select: all;
+}
+
+.buttonSpace { /*container for buttons */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.buttonText {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+#generateButton {
+    float: left;
+    background-color: rgb(68, 68, 112);
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    height: 47px;
+    border: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+    text-align: center;
+}
+
+#generateButton:hover{
+    background: rgba(107, 131, 212, 0.397);
+    transition: 0.25s
+}
+
+#generateButton:not(:hover){
+    background: rgba(55, 91, 211, 0.404);
+    transition: 0.25s;
+}
+#generateButton:active{
+    animation-name: generateClick;
+    animation-duration: 0.25s;
+}
+@keyframes generateClick {
+    0%      {background: rgba(107, 131, 212, 0.397);}
+    25%     {background: rgb(54, 79, 160);}
+    100%    {background: rgba(107, 131, 212, 0.397);}
+}
+
+#saveButton {
+    float: right;
+    background-color: rgb(167, 154, 40);
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    height: 47px;
+    border: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+    text-align: center;
+}
+#saveButton:hover{
+    background-color: rgba(255, 231, 11, 0.856);
+    transition: 0.25s;
+}
+#saveButton:not(:hover){
+    background-color: rgb(167, 154, 40);
+    transition: 0.25s;
+}
+
+#settingsBox {
+    width: 500px;
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: rgba(112, 136, 216, 0.137);
+    user-select: none;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+}
+
+#settingsTitle {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    color: rgba(255, 231, 11, 0.856);
+    margin-left: 20px;
+    margin-top: 10px;
+    width:fit-content;
+    margin-bottom: 0px;
+}
+
+#settingsContainer {
+    width: 60%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+    color: white;
+}
+
+#lengthSliderTitle {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#lengthSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 100%; 
+    height: 25px; 
+    border-radius: 30px;
+    background: #d3d3d3; 
+    outline: none; 
+    margin-bottom: 15px;
+}
+
+#lengthSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 35px; 
+    height: 35px; 
+    background: rgba(255, 231, 11, 1);
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+    cursor: pointer; 
+}
+
+.settings {
+
+    margin-bottom: 30px;
+}
+
+.settingsCheckbox {
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+
+}

@@ -1,0 +1,110 @@
+<!--Main Page here-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPageFiles/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <title>PassGet: Home Page</title>
+</head>
+<body>
+    <div id = "top">
+        <img src="../imgs/passGetText.png" id="passGetText" onclick="toMainPage()">
+
+        <!--- if width >= 900px -->
+        <div id="navbarContainer">
+            <div class="navbarTab" id="sidebarTab1" onclick="toPassGenerator()">
+                <p class= "sidebarText">Password Generator</p>
+            </div>
+            <div class="navbarTab" id="sidebarTab2" onclick="toPassLibrary()">
+                <p class= "sidebarText">Password Library</p>
+            </div>
+            <div class="navbarTab" id="sidebarTab3" onclick="toPassStrChecker()">
+                <p class= "sidebarText">Password Strength Checker</p>
+            </div>
+        </div>
+
+        <!---- else -->
+        <button id="sidebarButton" onclick="showSidebar()">☰</button>
+        <div id="sidebar">
+            <button id="backButton" onclick="hideSidebar()">
+                <img src="imgs/backButton.png" id="backIcon">
+            </button>
+            <div class="sidebarTab" id="sidebarTab1" onclick="toPassGenerator()">
+                <p class= "sidebarText">Password Generator</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab2" onclick="toPassLibrary()">
+                <p class= "sidebarText">Password Library</p>
+            </div>
+            <div class="sidebarTab" id="sidebarTab3" onclick="toPassStrChecker()">
+                <p class= "sidebarText">Password Strength Checker</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="imgContainer">
+        <div class="container">
+            <div class="titleContainer">
+                <div id="passGetTitle">PassGet</div>
+                <div class="text-settings">From Our Password to Yours.</div>
+            </div>
+            <div class="buttonContainer">
+                <button class="btn" id="btn1" onclick="toPassGenerator()">Try Password Generator!</button>
+                <button class="btn" id="btn2" onclick="toPassStrChecker()">Try Strength Checker!</button>
+            </div>
+        </div>
+    </div>
+    <div class="box"></div>
+    <div class="content-box">
+
+        <div id="headline-text">Supported Features</div>
+
+        <hr>
+        
+        <div class="descriptionWrapper">
+            <div class="imageWrapper">
+                <img src="imgs/passgen.png" id="img-settings1">
+            </div>
+            <div class="textWrapper">
+                <div class="textTitle">Password Generator</div>
+                <p class="mainText">
+                    Password Generator is a program designed to generate new passwords which includes random alphabets, numbers, symbols and special characters for the users. For this program, there are currently two functions available which includes generate (which generates the password) and save (which saves the password into its dedicated library). In addition, the users have the option to remove symbols or any special characters that are not needed. 
+                </p>
+            </div>
+        </div>
+
+        <div class="descriptionWrapper">
+            <div class="textWrapper">
+                <div class="textTitle">Password Library</div>
+                <p class="mainText">
+                    Password Library is a place in our website that is primarily designed to store and save the passwords that was made and generated previously. Password Library has a number of features such as quick-generating new passwords, deleting passwords and also an editing feature for convenience sake.
+                </p>
+            </div>
+            <div class="imageWrapper">
+                <img src="imgs/passlib.png" id="img-settings1">
+            </div>
+        </div>
+
+        <div class="descriptionWrapper">
+            <div class="imageWrapper">
+                <img src="imgs/strngthcheck.png" id="img-settings1">
+            </div>
+            <div class="textWrapper">
+                <div class="textTitle">Password Strength Checker</div>
+                <p class="mainText">
+                    Password Strength Checker is an additional program that can check how strong or weak your password is based on the length, combination of alphabets, numbers, and symbols, as well as how easy it is to guess or how common the password is. The password strength checker indicates the strength of the password by the strength bar. This function is provided as a way for users to check how strong their inputted passwords are.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p id="ending-text">Created By Code Society</p>>
+
+<script src="mainPageFiles/mainPage.js"></script>
+</body>
+</html>

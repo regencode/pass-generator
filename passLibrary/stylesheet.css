@@ -1,0 +1,479 @@
+
+body {
+    background-color: #0B0F2F;
+    margin: 0px;
+}
+
+
+/* Navbar and Sidebar settings */
+#top {
+    display: flex;
+    position:fixed;
+    background-color:#2c2b2e;
+    border-bottom:2px solid white;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    user-select: none;
+    z-index: 10;
+}
+
+#passGetText {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    width: auto;
+    margin-left: 70px;
+    user-select: none;
+}
+
+@media only screen and (min-width: 900px){
+
+    #sidebarButton {
+        display: none;
+    }
+
+    #backButton {
+        display: none;
+    }
+
+    .sidebarTab {
+        display: none;
+    }
+
+    #navbarContainer {
+        display: flex;
+        width: 40%;
+        min-width: 700px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .navbarTab {
+        width: 220px;
+        height: 50px;
+        padding: 0px;
+        background-color:#2c2b2e;
+        text-align: center;
+    }
+
+    .navbarTab:hover{
+        background-color: rgba(63, 63, 63, 0.837);
+        transition: 0.25s;
+    }
+    .navbarTab:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+
+    .sidebarText {
+        font-family: Arial, sans-serif;
+        user-select: none;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .navbarTab {
+        display: none;
+    }
+
+    #sidebarButton {
+        display: block;
+        height: 100%;
+        aspect-ratio: 1;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        border: 1px solid rgba(158, 158, 158, 0.35);
+
+        background-color:#2c2b2e;
+        font-size: 30px;
+        color:white;
+
+    }
+
+    #sidebarButton:hover{
+        background: rgba(158, 158, 158, 0.35);
+        transition: 0.25s
+    }
+    #sidebarButton:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+    #backButton {
+        display: block;
+        padding:7px;
+        height: 50px;
+        width: 50px;
+        user-select: none;
+
+        margin-left: auto;
+        margin-right: 0px;
+
+        border: 1px solid rgba(158, 158, 158, 0.35);
+    }
+    #backButton:hover{
+        background: rgba(158, 158, 158, 0.35);
+        transition: 0.25s
+    }
+    #backButton:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+
+    #backIcon {
+        width: 30px;
+    }
+
+
+    #sidebar {
+        display: none;
+        background-color: #2c2b2e;
+        right: 0;
+        top: 0;
+        position:fixed;
+        height: 100%;
+        width: 300px;
+        opacity: 1;
+    }
+    #sidebar:hover{
+        background-color: #2c2b2e;
+        transition: 0.3s;
+    }
+    #sidebar:not(:hover){
+        background-color: #2c2b2e;
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+    .sidebarTab {
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        background-color:#2c2b2e;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    .sidebarTab:hover{
+        background-color: rgba(63, 63, 63, 0.837);
+        transition: 0.25s;
+    }
+    .sidebarTab:not(:hover){
+        background-color:#2c2b2e;
+        transition: 0.25s;
+    }
+    
+    .sidebarText {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        color: white;
+        margin-top: 40px;
+    }
+
+}
+
+/* End of Navbar and Sidebar Settings */
+
+
+
+.title-text {
+    color: rgb(255, 230, 2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+    font-family: Trebuchet MS, Arial, sans-serif;  
+    text-align:center;
+    font-size: 55px;
+}
+
+.middleBox {
+    display: block;
+    min-height:90%;
+    border-radius: 25px;
+    background: rgba(112, 136, 216, 0.137);
+    padding: 20px; 
+    height: fit-content;
+    min-height: 800px;
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border: 10px;
+}
+
+#functionsContainer {/* container for functions */
+    display: flex;
+    border-radius: 20px;
+    height: 40px;
+    margin-right: 1px;
+    margin-bottom: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.functionButton {
+    display:flex;
+    border-radius: 15px;
+    background: rgba(112, 136, 216, 0.137); 
+    height:40px;
+    width:fit-content;
+    padding:0px;
+    margin-right: 20px;
+    user-select: none;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+}
+.functionButton:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 3px solid gold;
+    transition: 0.3s
+}
+.functionButton:not(:hover){
+    background: rgba(112, 136, 216, 0.137);
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+.functionText {
+    color: white;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    user-select: none;
+}
+
+#passwordNumCounter {
+    float: right;
+    color: white;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+}
+
+.passwordContainer {/* container for saved passwords */
+    display: block;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 50px;
+    height: 90%;
+
+    color: white;
+}
+
+.containerColumn1 {
+    flex:1;
+}
+
+.containerColumn2 {
+    flex:1;
+}
+
+
+.containerChild { /*container for each column */
+    flex:1;
+}
+
+
+@media only screen and (min-width: 1251px){
+
+    .passwordContainer {/* container for saved passwords */
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+        height: 90%;
+    
+        color: white;
+    }
+    
+    .containerColumn1 {
+        display:flex;
+    }
+    
+    .containerColumn2 {
+        display: flex;
+    }
+
+    .containerChild { /*container for each column */
+        flex:1;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px){
+
+    .passwordContainer {/* container for saved passwords */
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+        height: 90%;
+    
+        color: white;
+    }
+    
+    .containerColumn1 {
+        flex:1;
+    }
+    
+    .containerColumn2 {
+        flex:1;
+    }
+
+    .containerChild { /*container for each column */
+        flex:1;
+        padding: 5px;
+    }
+}
+
+
+
+
+#rcorners1 { /* rounded corners */
+    border-radius: 25px;
+    background: rgba(112, 136, 216, 0.137);
+    padding: 20px; 
+    height :500px;
+    
+  }
+
+
+.passwordTextContainer {
+    display:flex;
+    border-radius: 20px;
+    background: rgba(112, 136, 216, 0.137); 
+    padding-right: 0;
+    padding-left: 15px;
+    width: 30%;
+    min-width: fit-content;
+    height: 50px;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.passwordTextContainer:hover{
+    background: rgba(112, 136, 216, 0.35);
+    transition: 0.25s
+}
+.passwordTextContainer:not(:hover){
+    background: rgba(112, 136, 216, 0.137);
+    transition: 0.25s;
+}
+
+.passwordText {
+    background-color: transparent;
+    color: white;
+    border: 0px solid transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 10px;
+}
+
+.editBox {
+    display: none;
+    margin-top: 15px;
+    margin-bottom: auto;
+    min-width: 10px;
+    width: fit-content;
+
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: white;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+.copyButton, .editButton, .deleteButton, .acceptEdit, .rejectEdit {
+    display: block;
+    float:right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    border-radius: 15px;
+    background: rgba(112, 136, 216, 0.137); 
+    height: 40px;
+    width: 40px;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 10px rgb(27, 26, 26);
+    user-select: none;
+}
+
+.copyButton { /* to push all buttons to the right of container */
+    margin-left: 20px;
+}
+
+.acceptEdit{
+    display: none;
+    margin-left: 60px;
+}
+
+.rejectEdit {
+    display: none;
+}
+
+.copyButton {
+    float: right;
+}
+
+.copyButton:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 2px solid green;
+    transition: 0.25s
+}
+
+.editButton:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 2px solid gold;
+    transition: 0.25s;
+}
+
+.deleteButton:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 2px solid red;
+    transition: 0.25s;
+}
+
+.acceptEdit:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 2px solid green;
+    transition: 0.25s;
+}
+
+.rejectEdit:hover{
+    background: rgba(112, 136, 216, 0.35);
+    border: 2px solid red;
+    transition: 0.25s;
+}
+
+.copyButton, .editButton, .deleteButton, .acceptEdit, .rejectEdit:not(:hover){
+    background: rgba(112, 136, 216, 0.137);
+    transition: 0.25s;
+}
+
+.copyIcon, .editIcon, .deleteIcon, .acceptIcon, .rejectIcon {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: auto;
+}
+
+
+#bottomSpace {
+    display: block;
+    height: 150px;
+    text-align: center;
+}
+
+#bottomText{
+    margin-top: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
