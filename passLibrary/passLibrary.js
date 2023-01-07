@@ -39,7 +39,7 @@ function passwordTemplate(content, n){
     copyButton.setAttribute('class', 'copyButton');
     copyButton.setAttribute('id', `copyButton${n}`);
     var copyIcon = document.createElement('img');
-    copyIcon.setAttribute('src', '../imgs/copyIcon.jpg');
+    copyIcon.setAttribute('src', 'imgs/copyIcon.jpg');
     copyIcon.setAttribute('class', 'copyIcon');
     container.appendChild(copyButton);
     copyButton.appendChild(copyIcon);
@@ -49,7 +49,7 @@ function passwordTemplate(content, n){
     editButton.setAttribute('class', 'editButton');
     editButton.setAttribute('id', `editButton${n}`);
     var editIcon = document.createElement('img');
-    editIcon.setAttribute('src', '../imgs/editIcon.jpg');
+    editIcon.setAttribute('src', 'imgs/editIcon.jpg');
     editIcon.setAttribute('class', 'editIcon');
     container.appendChild(editButton);
     editButton.appendChild(editIcon);
@@ -59,7 +59,7 @@ function passwordTemplate(content, n){
     acceptEdit.setAttribute('class', 'acceptEdit');
     acceptEdit.setAttribute('id', `acceptEdit${n}`);
     var acceptIcon = document.createElement('img');
-    acceptIcon.setAttribute('src', '../imgs/tickMark.jpg');
+    acceptIcon.setAttribute('src', 'imgs/tickMark.jpg');
     acceptIcon.setAttribute('class', 'acceptIcon');
     container.appendChild(acceptEdit);
     acceptEdit.appendChild(acceptIcon);
@@ -68,7 +68,7 @@ function passwordTemplate(content, n){
     rejectEdit.setAttribute('class', 'rejectEdit');
     rejectEdit.setAttribute('id', `rejectEdit${n}`);
     var rejectIcon = document.createElement('img');
-    rejectIcon.setAttribute('src', '../imgs/crossMark.jpg');
+    rejectIcon.setAttribute('src', 'imgs/crossMark.jpg');
     rejectIcon.setAttribute('class', 'rejectIcon');
     container.appendChild(rejectEdit);
     rejectEdit.appendChild(rejectIcon);
@@ -82,7 +82,7 @@ function passwordTemplate(content, n){
     deleteButton.setAttribute('class', 'deleteButton');
     deleteButton.setAttribute('id', `deleteButton${n}`);
     var deleteIcon = document.createElement('img');
-    deleteIcon.setAttribute('src', '../imgs/deleteIcon.jpg');
+    deleteIcon.setAttribute('src', 'imgs/deleteIcon.jpg');
     deleteIcon.setAttribute('class', 'deleteIcon');
     container.appendChild(deleteButton);
     document.getElementById(`deleteButton${n}`).appendChild(deleteIcon);
