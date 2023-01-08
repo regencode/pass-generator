@@ -27,4 +27,4 @@ The password generator generates a random password with a simple click of the ge
 The password library is a webpage that contain your saved passwords with a maximum of 10 stored passwords. The user can also create new password or quick generate a password from within this page, as well as copy, edit, and delete the passwords that are stored.
   
   
-Ultimately, the password strength checker takes a password as an input and will decide whether that password is weak or medium or strong through a number of different criterias, such as the password length and the use of symbols and numbers
+Ultimately, the password strength checker takes a password as an input and will decide whether that password is weak or medium or strong through a number of different criterias, such as the password length and the use of symbols and numbers.
