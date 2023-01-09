@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pw-meter">
+        <h2>Password Strength Meter</h2>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password"
+          oninput="check()"/>
+          <div class="pw-display-toggle-btn">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-eye-slash"></i>
+          </div>
+          <div class="pw-strength">
+            <span>None</span>
+            <span></span>
+          </div>
+        <div id="check0">
+            <br>
+            <i class="far fa-check-circle"></i>  
+            <span> Length more than 8.</span>
+        </div>
+        <div id="check2">
+            <i class="far fa-check-circle"></i>  
+            <span> Contains numerical character.</span>
+        </div>
+        <div id="check3">
+            <i class="far fa-check-circle"></i>   
+            <span>Contains special character.</span>
+        </div>
+        <div id="check4">
+            <i class="far fa-check-circle"></i>  
+            <span>Shouldn't contain spaces.</span>
+        </div>
+        </div>
+      </div>
+
+   
+    <script src="PassStrength.js"></script>
+</body>
+</html>
