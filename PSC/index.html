@@ -9,41 +9,49 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="pw-meter">
-        <h2>Password Strength Meter</h2>
-        <div class="form-element">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password"
-          oninput="check()"/>
-          <div class="pw-display-toggle-btn">
-            <i class="fa fa-eye"></i>
-            <i class="fa fa-eye-slash"></i>
-          </div>
-          <div class="pw-strength">
-            <span>None</span>
-            <span></span>
-          </div>
+<div class="pw-meter">
+    <h2>Password Strength Meter</h2>
+    <div class="form-element">
+        <label for="password">Password</label>
+
+        <input type="password" id="password" placeholder="Enter password">
+
+        <div class="pw-display-toggle-btn">
+          <i class="fa fa-eye"></i>
+          <i class="fa fa-eye-slash"></i>
+        </div>
+
+        <div class="pw-strength">
+          <span>None</span>
+          <span></span>
+        </div>
+
         <div id="check0">
             <br>
             <i class="far fa-check-circle"></i>  
             <span> Length more than 8.</span>
         </div>
+
+        <div id="check1">
+          <i class="far fa-check-circle"></i>  
+          <span> Contains letter character.</span>
+      </div>
+
         <div id="check2">
             <i class="far fa-check-circle"></i>  
             <span> Contains numerical character.</span>
         </div>
+
         <div id="check3">
             <i class="far fa-check-circle"></i>   
             <span>Contains special character.</span>
         </div>
-        <div id="check4">
-            <i class="far fa-check-circle"></i>  
-            <span>Shouldn't contain spaces.</span>
-        </div>
-        </div>
-      </div>
+
+    </div>
+</div>
+
 
    
-    <script src="PassStrength.js"></script>
+<script src="PassStrength.js"></script>
 </body>
 </html>
