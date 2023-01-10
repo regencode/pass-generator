@@ -2,6 +2,7 @@
 
 function passwordGenerator() {
     var string = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+    var stringLowerOnly = "abcdefghijklmnopqrstuvwxyz"; 
     var numeric = '0123456789';
     var punctuation = '!@#$%^&*()+~`|}{[]:;?><,./-=';
     var password = "";

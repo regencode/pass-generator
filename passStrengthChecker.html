@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="passLibrary/stylesheet.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="PSC/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sofia+Sans:wght@200&display=swap" rel="stylesheet">
 
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sofia+Sans:wght@200&display=swap'); </style>
 
 
-    <title>PassGet: Password Library</title>
+    <title>Document</title>
 </head>
 <body>
-
     <div id = "top">
         <img src="imgs/passGetText.jpg" id="passGetText" onclick="toMainPage()">
 
@@ -49,46 +49,53 @@
         </div>
     </div>
 
-    <h1 class="title-text">
-        Password Library
-    </h1>
-    <div class = "middleBox">
-        <div id = "functionsContainer">
-            <div class="functionButton" id="plusNew" onclick="createNewPassword()">
-                <p class = "functionText">
-                    Create new password
-                </p>
-                <img src="imgs/plus.jpg" class="functionIcon">
-            </div>
-            <div class="functionButton" id="generateNew" onclick="createNewPassword(libraryPasswordGenerator())">
-                <p class = "functionText">
-                    Quick generate new password
-                </p>
-                <img src="imgs/download.jpg" class="functionIcon">
-            </div>
-        </div>
-        <hr>
-        <div id = "passwordNumCounter">
-            0/10
-        </div>
-        <div class = "passwordContainer">
-            <div class="containerColumn1">
-                <div class="containerChild" id = "column-1">
 
-                </div>
-            </div>
-            <div class="containerColumn2">
-                <div class="containerChild" id ="column-2">
+<div class="pw-meter">
+    <h2>Password Strength Meter</h2>
 
-                </div>
-            </div>
+    <div class="form-element">
+        <label for="password">Password</label>
+
+        <input type="password" id="password" placeholder="Enter password">
+
+        <div class="pw-display-toggle-btn">
+          <i class="fa fa-eye"></i>
+          <i class="fa fa-eye-slash"></i>
         </div>
+
+        <div class="pw-strength">
+          <span>None</span>
+          <span></span>
+        </div>
+
+        <div id="check0">
+            <br>
+            <i class="far fa-check-circle"></i>  
+            <span> Length more than 8.</span>
+        </div>
+
+        <div id="check1">
+          <i class="far fa-check-circle"></i>  
+          <span> Contains letter character.</span>
+      </div>
+
+        <div id="check2">
+            <i class="far fa-check-circle"></i>  
+            <span> Contains numerical character.</span>
+        </div>
+
+        <div id="check3">
+            <i class="far fa-check-circle"></i>   
+            <span>Contains special character.</span>
+        </div>
+
     </div>
-    <div id="bottomSpace"> 
-        <p id="bottomText">Created by Code Society</p>
-    </div>
-</body>
-<script src="passLibrary/passLibrary.js"></script> 
+
+</div>
+
+
+   
+<script src="PSC/PassStrength.js"></script>
 <script src="functions.js"></script>
 </body>
 </html>
