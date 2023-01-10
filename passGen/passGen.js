@@ -54,3 +54,20 @@ slider.oninput = function() {
 function getCurrentPassword(){
     return document.getElementById('password').innerHTML;
 }
+
+function saveToLibrary(){
+    var password = getCurrentPassword();
+    if(password != ""){
+        if (localStorage.passwordAmount < 10){
+            localStorage.passwordAmount = Number(localStorage.passwordAmount) + 1;
+            localStorage.setItem(`password${localStorage.passwordAmount}`, password);
+            alert("Password saved to library");
+        }
+        else{
+            alert("Password limit has been reached (10 password maximum)");
+        }
+    }
+    else{
+        alert("Can't save empty password!");
+    }
+}

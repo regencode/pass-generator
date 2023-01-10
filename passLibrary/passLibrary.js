@@ -8,6 +8,32 @@ function countNumPasswords(){
 
 }
 
+// Password Generator
+
+function libraryPasswordGenerator(len = 8, includeSymbols=true) {
+    var string = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+    var numeric = '0123456789';
+    var punctuation = '!@#$%^&*()+~`|}{[]:;?><,./-=';
+    var password = "";
+    var character = "";
+    var crunch = true;
+    while( password.length<len ) {
+        entity1 = Math.ceil(string.length*Math.random()*Math.random());
+        entity2 = Math.ceil(numeric.length*Math.random()*Math.random());
+        entity3 = Math.ceil(punctuation.length*Math.random()*Math.random());
+        character += string.charAt (entity1);
+        character += numeric.charAt( entity2 );
+        if(includeSymbols){
+            character += punctuation.charAt( entity3 );
+        }
+        password = character;
+    }
+    password=password.split('').sort(function(){return 0.5-Math.random()}).join('');
+    password = password.substr(0,len);
+
+    return password;
+}
+
 function passwordTemplate(content, n){
 
     var container = document.createElement('div');
@@ -125,13 +151,16 @@ function passwordTemplate(content, n){
         rejectEdit.show();
         inputBox.show();
 
+        // to remove alert whenever a user edits a password, cancels the edit, and deletes a password, we use a var to check if the user is editing the password, and only show the alert when the user is editing
+
+        var editing = 1
         acceptEdit.click(function () {
 
             if((inputBox.val().length) >= 8){ 
                 localStorage.setItem(`password${n}`, inputBox.val());
                 location.reload(); 
             }
-            else{
+            else if (editing == 1){
                 alert("Your new password must be 8+ characters long");
             }
 
@@ -150,10 +179,11 @@ function passwordTemplate(content, n){
             editButton.show();
             deleteButton.show();
             passwordText.show();
-    
+            
+            editing = 0;
         });
     
-    
+        return;
     });
 
 
