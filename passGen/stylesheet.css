@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: linear-gradient(#0B0F2F,rgb(12, 12, 68));
+    background-color: #0B0F2F;
     margin: 0px;
 }
 
@@ -212,4 +212,17 @@ body {
     height: 15px;
     border-radius: 20px;
 
+}
+
+#bottomSpace {
+    display: block;
+    height: 150px;
+    text-align: center;
+}
+
+#bottomText{
+    margin-top: 60px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 30px;
+    color: white;
 }

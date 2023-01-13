@@ -119,3 +119,18 @@
   i{
     transition-duration:600ms;
   }
+
+  
+
+#bottomSpace {
+    display: block;
+    height: 150px;
+    text-align: center;
+}
+
+#bottomText{
+    margin-top: 60px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+}
