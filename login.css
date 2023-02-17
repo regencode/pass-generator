@@ -1,0 +1,178 @@
+#loginScreenContainer {
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:block;
+    background-color: rgba(0, 0, 0, 0.675);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    z-index: 100;
+}
+
+#registerScreenContainer {
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.675);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    z-index: 200;
+}
+
+
+#loginBox {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    transform:translateY(50%);
+    border: 1px solid black;
+    border-radius: 20px;
+
+    width: 500px;
+    height: 450px;
+    background-color: rgb(29, 21, 59);
+}
+
+#registerBox {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    transform:translateY(40%);
+    border: 1px solid black;
+    border-radius: 20px;
+
+    width: 500px;
+    height: 550px;
+    background-color: rgb(29, 21, 59);
+}
+
+#loginPassGetLogo {
+    display:block;
+    width: 45%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#formContainer {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 85%;
+    height: 50%;
+}
+
+.formTitle {
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.loginText {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.inputField {
+    margin-top: 0px;
+    width: 95%;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#loginButtonContainer {
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
+    width: 85%;
+    height: 30%;
+}
+
+#registerButtonContainer {
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+    width: 85%;
+    height: 30%;
+}
+
+.loginFormButton {
+    float: left;
+    background-color: rgb(68, 68, 112);
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    height: 47px;
+    border: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 30px rgb(27, 26, 26);
+    text-align: center;
+}
+
+#cancelButton {
+    display:block;
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: rgb(31, 31, 65);
+    border-radius: 10px;
+}
+
+#cancelButton:hover{
+    background-color: rgb(51, 51, 105);
+    transition: 0.25s;
+}
+#cancelButton:not(:hover){
+    background-color: rgb(31, 31, 65);
+    transition: 0.25s;
+}
+
+#loginButton {
+    background-color: rgb(167, 154, 40);
+    text-align: center;
+}
+
+.loginButtonText {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#loginButton:hover{
+    background-color: rgba(255, 231, 11, 0.856);
+    transition: 0.25s;
+}
+#loginButton:not(:hover){
+    background-color: rgb(167, 154, 40);
+    transition: 0.25s;
+}
+
+#registerButton:hover{
+    background: rgba(107, 131, 212, 0.397);
+    transition: 0.25s
+}
+
+#registerButton:not(:hover){
+    background: rgba(55, 91, 211, 0.404);
+    transition: 0.25s;
+}

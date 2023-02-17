@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mainPageFiles/stylesheet.css">
     <link rel="stylesheet" href="navsidebar.css">
+    <link rel="stylesheet" href="login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
     </script> 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sofia+Sans:wght@200&display=swap" rel="stylesheet">
@@ -34,6 +35,10 @@
             </div>
         </div>
 
+        <div id="loginNav" onclick="showLogin()">
+            <img id="userIcon" src="imgs/userIcon.jpg">
+        </div>
+
         <!---- else -->
         <button id="sidebarButton" onclick="showSidebar()">☰</button>
         <div id="sidebar">
@@ -50,8 +55,64 @@
                 <p class= "sidebarText">Password Strength Checker</p>
             </div>
         </div>
+    </div>
 
 
+    <!---Log in-->
+    <div id="loginScreenContainer">
+        <div id="darkenBackground"></div>
+        <div id="loginBox">
+            <img id="cancelButton" src="imgs/backButton.jpg" onclick="hideLogin()">
+            <img id="loginPassGetLogo" src="imgs/passGetText.jpg">
+            <hr>
+            <div id="formContainer">
+                <p class="formTitle">Log in</p>
+                <p class="loginText">Email</p>
+                <input type="text" class="inputField">
+                <p class="loginText">Password</p>
+                <input type="password" class="inputField" maxlength="16">
+            </div>
+            <div id="loginButtonContainer">
+                <button class="loginFormButton" id="loginButton">
+                    <p class="loginButtonText">Login</p>
+                </button>
+
+                <button class="loginFormButton" id="registerButton" onclick="changeToRegister()">
+                    <p class="loginButtonText">Register</p>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!---Register-->
+    <div id="registerScreenContainer">
+        <div id="darkenBackground"></div>
+        <div id="registerBox">
+            <img id="cancelButton" src="imgs/backButton.jpg" onclick="changeToLogin()">
+            <img id="loginPassGetLogo" src="imgs/passGetText.jpg">
+            <hr>
+            <div id="formContainer">
+                <p class="formTitle">Register</p>
+                <p class="loginText">Email</p>
+                <input type="text" class="inputField">
+                <p class="loginText">Password</p>
+                <input type="password" class="inputField" maxlength="16">
+                <p class="loginText">Confirm password</p>
+                <input type="password" class="inputField" maxlength="16">
+            </div>
+            <div id="registerButtonContainer">
+                <button class="loginFormButton" id="loginButton">
+                    <p class="loginButtonText">Register</p>
+                </button>
+
+                <button class="loginFormButton" id="registerButton" onclick="changeToLogin()">
+                    <p class="loginButtonText">Cancel</p>
+                </button>
+            </div>
+
+        </div>
 
     </div>
 

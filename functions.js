@@ -32,3 +32,23 @@ function toPassStrChecker(){
     window.location.href="passStrengthChecker.html";
 }
 
+var $loginForm = $("#loginScreenContainer");
+var $registerForm = $("#registerScreenContainer");
+
+function showLogin(){
+    $loginForm.fadeIn(200);
+}
+
+function hideLogin(){
+    $loginForm.fadeOut(200);
+}
+
+function changeToRegister() {
+    $loginForm.fadeOut(200);
+    $registerForm.fadeIn(200);
+}
+
+function changeToLogin() {
+    $registerForm.fadeOut(200);
+    $loginForm.fadeIn(200);
+}
