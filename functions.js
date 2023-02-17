@@ -43,6 +43,10 @@ function hideLogin(){
     $loginForm.fadeOut(200);
 }
 
+function hideRegister() {
+    $registerForm.fadeOut(200);
+}
+
 function changeToRegister() {
     $loginForm.fadeOut(200);
     $registerForm.fadeIn(200);
