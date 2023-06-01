@@ -1,7 +1,7 @@
 # PassGet by Code Society 
 Members:
 
-Thomas Gozalie/regencode - 2602119096
+Thomas Gozalie/regencode
 
 Felix Ferdinand - 2602108842
 
